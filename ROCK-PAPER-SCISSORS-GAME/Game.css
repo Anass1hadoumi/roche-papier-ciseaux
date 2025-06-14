@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+}
+.container{
+grid-auto-rows:minmax(25px,auto);
+display: grid;
+grid-template-areas: 
+"tittle tittle tittle tittle tittle tittle"
+"bt bt bt bt bt bt "
+"R R R R R R"
+"score score score score score score"
+"ft ft ft ft ft ft"
+;
+
+}
+.tittle{
+  color: azure;
+    grid-area: tittle;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 70px;
+    margin-bottom: 20px;
+
+}
+.buttons{
+    margin-top: 5px;
+    grid-area: bt;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+}
+button{
+    padding:50px 70px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: black;
+    border-color: white;
+    border-radius: 80px;
+    cursor: pointer;
+}
+
+.graphique-result{
+    grid-area:R; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.graphique-result1{
+    color: azure;
+    padding-top: 15px;
+    font-size: 50px;
+    
+}
+.graphique-result2{
+    color: azure;
+    padding-top: 15px;
+    font-size: 50px;
+}
+
+.js-score{
+    color: azure;
+    grid-area:score;
+    padding-left: 600px;
+    font-size: 30px;
+}
+.resetscore{
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 20px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+.autoPlay{    
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 20px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+.footer{
+    grid-area:ft;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
